@@ -1,0 +1,188 @@
+/* ================================
+   WEBSITE PROFIL - PINK GIRLY
+   ================================ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fff5fa, #ffd6e8, #fff);
+    color: #5a3045;
+    padding: 40px 20px;
+}
+
+/* Kartu Profil */
+.kartu-profil {
+    max-width: 750px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 30px;
+    text-align: center;
+
+    box-shadow:
+        0 15px 35px rgba(214, 92, 139, 0.18),
+        0 5px 15px rgba(255, 182, 213, 0.25);
+
+    border: 2px solid #ffd0e2;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hiasan atas */
+.kartu-profil::before {
+    content: "♡";
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    font-size: 35px;
+    color: #f29abb;
+}
+
+.kartu-profil::after {
+    content: "♡";
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 35px;
+    color: #f29abb;
+}
+
+/* Judul */
+h1 {
+    color: #d94f88;
+    font-size: 32px;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+/* Garis */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #f39abc,
+        transparent
+    );
+    margin: 20px 0 30px;
+}
+
+/* Foto Profil */
+.kartu-profil img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 7px solid #ffd1e3;
+
+    box-shadow:
+        0 8px 20px rgba(214, 79, 136, 0.25);
+
+    transition: 0.3s ease;
+}
+
+.kartu-profil img:hover {
+    transform: scale(1.05);
+    border-color: #f29abb;
+}
+
+/* Subjudul */
+h2 {
+    color: #d85a8c;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+/* Paragraf */
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #684355;
+}
+
+/* List Sosial Media */
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+li {
+    margin: 12px 0;
+}
+
+/* Tombol Link */
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(135deg, #f28db4, #d9578d);
+
+    padding: 12px 25px;
+    border-radius: 25px;
+
+    font-weight: 600;
+
+    box-shadow: 0 5px 12px rgba(217, 87, 141, 0.25);
+
+    transition: 0.3s ease;
+}
+
+a:hover {
+    background: linear-gradient(135deg, #d9578d, #c9437a);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(217, 87, 141, 0.35);
+}
+
+/* Footer */
+.kartu-profil > p:last-child {
+    color: #a56b83;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* ================================
+   RESPONSIVE UNTUK HP
+   ================================ */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 12px;
+    }
+
+    .kartu-profil {
+        padding: 30px 20px;
+        border-radius: 25px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .kartu-profil img {
+        width: 160px;
+        height: 160px;
+    }
+
+    a {
+        width: 90%;
+    }
+}
